@@ -1,0 +1,59 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Desktop sidebar */
+.sidebarDesktop {
+
+  color: white;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebarDesktop {
+    display: block;
+  }
+}
+
+/* Mobile overlay */
+.overlayContainer {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+}
+
+.overlayBackground {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebarMobile {
+  position: relative;
+  z-index: 50;
+  width: 256px;
+  background-color: #d1d2d3;
+
+  color: white;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+/* Burger button */
+.burger {
+  padding: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
